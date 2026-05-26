@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moletto - кофе и выпечка</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23faf7f2'/><path d='M30 38h32v16a16 16 0 0 1-32 0z' fill='%23c8a87e'/><rect x='28' y='35' width='36' height='4' rx='2' fill='%23c8a87e'/><path d='M62 44a8 8 0 0 0 0-14' fill='none' stroke='%23c8a87e' stroke-width='3' stroke-linecap='round'/></svg>">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+    <div class="loader-dot"></div>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+    <a href="#" class="logo">moletto</a>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#menu">Меню</a></li>
+        <li><a href="#gallery">Галерея</a></li>
+        <li><a href="#contact" class="nav-cta">Забронировать</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Меню">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+    <div class="hero-deco">
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+        <div class="circle c3"></div>
+    </div>
+    <div class="hero-wrap">
+        <div class="hero-content">
+            <div class="hero-badge">✦ С 2021 года</div>
+            <h1>Кофе, который <br><em>хочется пить</em></h1>
+            <p>Обжарка под заказ, авторские рецептуры и уютный интерьер в центре города.</p>
+            <div>
+                <a href="#menu" class="btn btn-primary">Смотреть меню</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="frame">
+                <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&q=80" alt="Кофе" loading="lazy">
+            </div>
+            <div class="stamp">
+                <strong>12+</strong>
+                видов кофе
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- HIGHLIGHTS -->
+<section id="about">
+    <div class="section-inner">
+        <div class="text-center reveal">
+            <div class="section-label">Почему мы</div>
+            <h2 class="section-title">Кофе без компромиссов</h2>
+            <p class="section-desc mx-auto">От зёрна до чашки - мы контролируем каждый этап, чтобы вы наслаждались идеальным вкусом.</p>
+        </div>
+        <div class="highlights">
+            <div class="highlight-card reveal">
+                <div class="num">8</div>
+                <h4>Стран-поставщиков</h4>
+                <p>Работаем напрямую с фермерами из Эфиопии, Колумбии, Кении и других стран.</p>
+            </div>
+            <div class="highlight-card reveal">
+                <div class="num">40+</div>
+                <h4>Авторских рецептов</h4>
+                <p>Постоянно экспериментируем с новыми вкусами и сезонными ингредиентами.</p>
+            </div>
+            <div class="highlight-card reveal">
+                <div class="num">96%</div>
+                <h4>Довольных гостей</h4>
+                <p>Возвращаются снова и советуют нас друзьям.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MENU -->
+<section id="menu">
+    <div class="section-inner">
+        <div class="reveal">
+            <div class="section-label">Меню</div>
+            <h2 class="section-title">Что попробовать</h2>
+            <p class="section-desc">Классика и авторские позиции - каждый найдёт свой любимый вкус.</p>
+        </div>
+        <div class="menu-grid">
+            <div class="menu-item reveal">
+                <div class="menu-dot"></div>
+                <div class="menu-info">
+                    <div>
+                        <h4>Капучино</h4>
+                        <div class="menu-note">Эспрессо + нежная молочная пена</div>
+                    </div>
+                    <span>250 ₽</span>
+                </div>
+            </div>
+            <div class="menu-item reveal">
+                <div class="menu-dot"></div>
+                <div class="menu-info">
+                    <div>
+                        <h4>Латте</h4>
+                        <div class="menu-note">Мягкий кофе с большим количеством молока</div>
+                    </div>
+                    <span>280 ₽</span>
+                </div>
+            </div>
+            <div class="menu-item reveal">
+                <div class="menu-dot"></div>
+                <div class="menu-info">
+                    <div>
+                        <h4>Мокка</h4>
+                        <div class="menu-note">Кофе с шоколадом и взбитыми сливками</div>
+                    </div>
+                    <span>320 ₽</span>
+                </div>
+            </div>
+            <div class="menu-item reveal">
+                <div class="menu-dot"></div>
+                <div class="menu-info">
+                    <div>
+                        <h4>Флэт Уайт</h4>
+                        <div class="menu-note">Двойной эспрессо с тонким слоем молока</div>
+                    </div>
+                    <span>300 ₽</span>
+                </div>
+            </div>
+            <div class="menu-item reveal">
+                <div class="menu-dot"></div>
+                <div class="menu-info">
+                    <div>
+                        <h4>Раф</h4>
+                        <div class="menu-note">Сливки, ваниль и эспрессо - нежный десерт</div>
+                    </div>
+                    <span>330 ₽</span>
+                </div>
+            </div>
+            <div class="menu-item reveal">
+                <div class="menu-dot"></div>
+                <div class="menu-info">
+                    <div>
+                        <h4>Холодный кофе</h4>
+                        <div class="menu-note">Со льдом и сиропом на выбор</div>
+                    </div>
+                    <span>290 ₽</span>
+                </div>
+            </div>
+            <div class="menu-item reveal">
+                <div class="menu-dot"></div>
+                <div class="menu-info">
+                    <div>
+                        <h4>Круассан</h4>
+                        <div class="menu-note">Свежая выпечка с маслом</div>
+                    </div>
+                    <span>180 ₽</span>
+                </div>
+            </div>
+            <div class="menu-item reveal">
+                <div class="menu-dot"></div>
+                <div class="menu-info">
+                    <div>
+                        <h4>Чизкейк</h4>
+                        <div class="menu-note">Сливочный десерт с ягодным соусом</div>
+                    </div>
+                    <span>350 ₽</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+    <div class="section-inner">
+        <div class="reveal">
+            <div class="section-label">Галерея</div>
+            <h2 class="section-title">Наша атмосфера</h2>
+            <p class="section-desc">Уют, свет, аромат свежеобжаренного кофе и тёплая компания.</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item reveal">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80" alt="Кофе" loading="lazy">
+            </div>
+            <div class="gallery-item reveal">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80" alt="Приготовление кофе" loading="lazy">
+            </div>
+            <div class="gallery-item reveal">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&q=80" alt="Интерьер" loading="lazy">
+            </div>
+            <div class="gallery-item reveal">
+                <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=600&q=80" alt="Кофейные зерна" loading="lazy">
+            </div>
+            <div class="gallery-item reveal">
+                <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=600&q=80" alt="Десерт" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="section-inner">
+        <div class="reveal">
+            <div class="section-label">Контакты</div>
+            <h2 class="section-title">Приходите</h2>
+            <p class="section-desc">Будем рады видеть вас. Забронировать столик можно онлайн или по телефону.</p>
+        </div>
+        <div class="contact-section reveal">
+            <div class="contact-grid">
+                <div style="display:flex;flex-direction:column;gap:16px;">
+                    <div class="contact-item">
+                        <div class="icon">📍</div>
+                        <div><h4>Адрес</h4><p>ул. Кофейная, 7</p></div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">📞</div>
+                        <div><h4>Телефон</h4><p><a href="tel:+37377869115" style="color:var(--text);text-decoration:none;">+373 77 869 115</a></p></div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">✉️</div>
+                        <div><h4>Email</h4><p>egor.riznykhh@gmail.com</p></div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">🕐</div>
+                        <div><h4>Режим работы</h4><p>Ежедневно: 8:00–22:00</p></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="booking-header">
+                        <h3>Забронировать столик</h3>
+                        <p>Заполните форму - мы подтвердим бронь в течение 30 минут</p>
+                    </div>
+                    <form class="booking-form" id="contactForm">
+                        <div class="booking-row">
+                            <div class="booking-field">
+                                <span class="field-icon">👤</span>
+                                <input type="text" placeholder="Имя" required>
+                            </div>
+                            <div class="booking-field">
+                                <span class="field-icon">📞</span>
+                                <input type="tel" placeholder="Телефон" required>
+                            </div>
+                        </div>
+                        <div class="booking-row">
+                            <div class="booking-field">
+                                <span class="field-icon">📅</span>
+                                <input type="date" id="dateInput" required>
+                            </div>
+                            <div class="booking-field">
+                                <span class="field-icon">🕐</span>
+                                <select required>
+                                    <option value="">Время</option>
+                                    <option>9:00</option>
+                                    <option>10:00</option>
+                                    <option>11:00</option>
+                                    <option>12:00</option>
+                                    <option>13:00</option>
+                                    <option>14:00</option>
+                                    <option>15:00</option>
+                                    <option>16:00</option>
+                                    <option>17:00</option>
+                                    <option>18:00</option>
+                                    <option>19:00</option>
+                                    <option>20:00</option>
+                                    <option>21:00</option>
+                                </select>
+                                <span class="select-arrow">▼</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="guest-label">Количество гостей</span>
+                            <div class="guest-selector">
+                                <button type="button" id="guestMinus">−</button>
+                                <span id="guestCount">2</span>
+                                <button type="button" id="guestPlus">+</button>
+                            </div>
+                        </div>
+                        <div class="booking-field">
+                            <textarea placeholder="Пожелания (особый случай, предпочтения...)" style="padding-left:14px;"></textarea>
+                        </div>
+                        <div class="booking-submit">
+                            <button type="submit" class="btn btn-primary">Забронировать</button>
+                            <small>Без предоплаты. Отмените за 2 часа</small>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 moletto - кофе и выпечка</p>
+</footer>
+
+<script>
+    window.addEventListener('load', () => {
+        document.getElementById('loader').classList.add('hidden');
+        const dateInput = document.getElementById('dateInput');
+        if (dateInput) {
+            const d = new Date();
+            dateInput.value = d.toISOString().split('T')[0];
+        }
+    });
+
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+        links.classList.toggle('open');
+    });
+    links.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => links.classList.remove('open'));
+    });
+
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) e.target.classList.add('visible');
+            });
+        },
+        { threshold: .1, rootMargin: '0px 0px -40px 0px' }
+    );
+    revealEls.forEach(el => observer.observe(el));
+
+    document.getElementById('contactForm').addEventListener('submit', e => {
+        e.preventDefault();
+        alert('Спасибо! Мы подтвердим бронь в ближайшее время ☕');
+        e.target.reset();
+        document.getElementById('guestCount').textContent = '2';
+    });
+
+    let guests = 2;
+    document.getElementById('guestPlus').addEventListener('click', () => {
+        if (guests < 10) document.getElementById('guestCount').textContent = ++guests;
+    });
+    document.getElementById('guestMinus').addEventListener('click', () => {
+        if (guests > 1) document.getElementById('guestCount').textContent = --guests;
+    });
+</script>
+</body>
+</html>
